@@ -1,5 +1,6 @@
-# Copyright (C) 2022 NG:ITL
-# import the main file in the backend folder
+
+from database_interface.database_interface import DatabaseInterface
 
 if __name__ == "__main__":
-    print("enter you projects main function :)")
+    database_interface = DatabaseInterface()
+    database_interface.run()

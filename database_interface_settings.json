@@ -1,0 +1,13 @@
+{
+    "pynng": {
+        "publishers": {
+        },
+        "subscribers": {
+        },
+        "requesters": {
+            "connection_overlay": {
+                "address": "ipc:///tmp/RAAI/connection_overlay.ipc"
+            }
+        }
+    }
+}
