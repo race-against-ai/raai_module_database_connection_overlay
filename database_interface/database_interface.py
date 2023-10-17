@@ -39,7 +39,7 @@ class DatabaseInterface:
         self.__engine = QQmlApplicationEngine()
         self.__engine.load(resource_path() / "frontend/qml/main.qml")
         self.__engine.rootContext().setContextProperty("databaseInterface", self)
-        self.__config = json.load(open(find_qml_main_file("database_interface_settings.json")))
+        self.__config = json.load(open(find_qml_main_file("database_interface_config.json")))
         self.database = DatabaseModel(settings=self.__config, parent=self.__app)
         self.__engine.rootContext().setContextProperty("database", self.database)
 
